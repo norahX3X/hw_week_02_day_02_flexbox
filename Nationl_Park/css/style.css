@@ -2,28 +2,30 @@
 /* header & nav */
 
 header {
-
+height: 10%;
+align-items: flex-start;
+display: flex;
+justify-content: space-around;
+flex-flow: row wrap;
 }
 
 header .logo, header nav {
-
+  max-width: 900px;
 }
 
 
 .container .aboutrow {
 
-}
-
-
-/* feature */
-
-.feature {
 
 }
+
 
 /* cta */
 
 .cta .container {
+  display: flex;
+  justify-content: space-between;
+
 
 }
 
@@ -31,23 +33,32 @@ header .logo, header nav {
 /* footer */
 
 footer {
+  height: 20%;
+  display: flex;
 
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .footer-left {
-
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .footer-left .footer-col {
+}
+.footernav li{
+  display: block;
+  text-align: left;
 
 }
-
 .footer-right {
 
 }
 
-/* ======+++++======++++=====+++=== */
-/* ======+++++======++++=====+++=== */
 
 .container {
   width: 80vw;
@@ -93,6 +104,9 @@ nav ul li {
   color: #d0a064;
   transition: all 0.2s;
 }
+.navigation li{
+  display: inline;
+}
 
 .hero-cont {
   background-image: url('../assets/hero.jpg');
@@ -101,6 +115,7 @@ nav ul li {
   background-color: #555555;
   background-blend-mode: multiply;
   padding: 2em;
+  justify-content: center;
 }
 
 .hero h2, .hero h1 {
@@ -129,6 +144,17 @@ nav ul li {
   padding: 5px 15px;
   text-decoration:none;
   transition: all 0.2s;
+   width: 10%; 
+   height: 10%;
+   text-align: center;
+}
+
+.aboutbtn{
+  align-self: center;
+  align-content: center;
+  margin-left: 45%;
+
+
 }
 
 .aboutbtn:hover, .contactbtn:hover {
@@ -146,6 +172,7 @@ nav ul li {
   line-height: 1.4em;
   padding: 1em;
   font-style: italic;
+  
 }
 
 .top p {
@@ -156,6 +183,7 @@ nav ul li {
 .aboutrow {
   background-color: #d0a064;
   padding: 15px;
+  display: flex;
 }
 
 .aboutcol {
@@ -175,6 +203,7 @@ nav ul li {
 }
 
 .feature {
+  display: flex;
   background-color: #167C80;
 }
 
@@ -182,10 +211,17 @@ nav ul li {
   background-image: url('../assets/glacier.jpg');
   background-size:cover;
   background-position:center center;
+  float: 1px;
+  width: 50%;
+  height: auto;
+  float: left;
 }
 
 .feat-right {
   padding: 50px;
+  width: 50%;
+  float: right;
+
 }
 
 .feat-right p {
